@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/se_project_react/static/css/main.412bb26f.css",
+    "main.js": "/se_project_react/static/js/main.1068d357.js",
+    "static/js/787.79f92504.chunk.js": "/se_project_react/static/js/787.79f92504.chunk.js",
+    "static/media/Avatar.svg": "/se_project_react/static/media/Avatar.2869a0c84c8b6c717a1a53d2919deb54.svg",
+    "static/media/Snow.svg": "/se_project_react/static/media/Snow.a5bb7441280cef64ae081acadb7d6e66.svg",
+    "static/media/SnowyNight.svg": "/se_project_react/static/media/SnowyNight.20a89d711249712380ea9f4269b386a3.svg",
+    "static/media/Storm.svg": "/se_project_react/static/media/Storm.51c68e175fd385c6055462b91d462bd5.svg",
+    "static/media/StormyNight.svg": "/se_project_react/static/media/StormyNight.b98983c750d3f283a9267efc3c3fd940.svg",
+    "static/media/Rain.svg": "/se_project_react/static/media/Rain.8fd968acf8cb57624e2a990b324c1278.svg",
+    "static/media/RainyNight.svg": "/se_project_react/static/media/RainyNight.ebe0301b9856c6c8564df5c8beea1ac8.svg",
+    "static/media/logo.svg": "/se_project_react/static/media/logo.2e52a3b54443b649938df0a9b3d231e2.svg",
+    "static/media/Fog.svg": "/se_project_react/static/media/Fog.8ad4efe699a8e3a16ae0220f3b5a3d48.svg",
+    "static/media/FoggyNight.svg": "/se_project_react/static/media/FoggyNight.cee462810b2a7c8696b7701170241a66.svg",
+    "static/media/New Garment Close Button.svg": "/se_project_react/static/media/New Garment Close Button.fb470b9eb269af059a2e.svg",
+    "static/media/CloudyNight.svg": "/se_project_react/static/media/CloudyNight.de4a56168637da1b9d1ea5676d2ba515.svg",
+    "static/media/Cloudy.svg": "/se_project_react/static/media/Cloudy.afb98af2bd43d3a2a330e655695bd2c9.svg",
+    "index.html": "/se_project_react/index.html",
+    "static/media/Image Close Button.svg": "/se_project_react/static/media/Image Close Button.34bff1eb1ed0331b4c52.svg",
+    "static/media/ClearNight.svg": "/se_project_react/static/media/ClearNight.ae0e6bbe1e0bfc883f3ba207396bf3b4.svg",
+    "static/media/Sunny.svg": "/se_project_react/static/media/Sunny.1c3ffd02d92146a2673939be89b88d54.svg",
+    "main.412bb26f.css.map": "/se_project_react/static/css/main.412bb26f.css.map",
+    "main.1068d357.js.map": "/se_project_react/static/js/main.1068d357.js.map",
+    "787.79f92504.chunk.js.map": "/se_project_react/static/js/787.79f92504.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.412bb26f.css",
+    "static/js/main.1068d357.js"
+  ]
+}
