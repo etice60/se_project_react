@@ -11,9 +11,84 @@
 }
 
 .modal__content {
+  position: relative;
   background-color: white;
   max-width: 496px;
   width: 100%;
   border-radius: 20px;
-  padding: 34px 36px;
+  font-family: "CabinetGrotesk-Medium", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: black;
+  padding: 28px 28px 36px 28px;
+}
+
+.modal__close-button {
+  width: 20px;
+  height: 20px;
+  background-image: url("../../Images/New\ Garment\ Close\ Button.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  bottom: calc(100% + -37px);
+  left: calc(100% + -38px);
+}
+
+.modal__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.modal__add-button {
+  width: 124px;
+  height: 36px;
+  margin-top: 24px;
+  padding: 0;
+  background-color: #000;
+  border-radius: 4px;
+  color: rgba(225, 225, 225, 1);
+  cursor: pointer;
+  text-align: center;
+  border: none;
+}
+
+.modal__add-button:disabled {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal__add-button:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal__input {
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 4px;
+  margin-bottom: 24px;
+  font-size: 16px;
+}
+
+.modal__label_header {
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+
+.modal__label_container {
+  margin-left: 0px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 8px;
+}
+
+.modal__input_radio {
+  margin: 4px;
+}
+
+.modal__input_radio:checked + .modal__label_radio {
+  color: black;
 }
