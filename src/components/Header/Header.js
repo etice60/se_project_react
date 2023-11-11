@@ -1,6 +1,6 @@
 import "./Header.css";
-import headerlogo from "../../Images/logo.svg";
-import avatar from "../../Images/Avatar.svg";
+import headerlogo from "../../images/logo.svg";
+import avatar from "../../images/Avatar.svg";
 import { parseWeatherData } from "../../utils/weatherApi";
 
 const Header = ({ weatherCity, onCreateModal }) => {
