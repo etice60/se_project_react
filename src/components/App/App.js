@@ -38,41 +38,37 @@ function App() {
       .then((data) => {
         const temperature = parseWeatherData(data);
         setTemp(temperature);
-      })
-      .catch((err) => {
-        console.error(err);
-      });
-  }, []);
-
-  useEffect(() => {
-    getForestWeather()
-      .then((data) => {
         setCity(parseCityData(data));
       })
-      .catch((err) => {
-        console.error(err);
-      });
+      .catch(console.error);
   }, []);
+
+  // useEffect(() => {
+  //   getForestWeather()
+  //     .then((data) => {
+  //       setCity(parseCityData(data));
+  //     })
+  //     .catch(console.error);
+  // }, []);
 
   useEffect(() => {
     if (!activeModal) return;
     const handleEscClose = (evt) => {
       if (evt.key === "Escape") handleCloseModal();
     };
-    document.addEventListener("keydown", handleEscClose);
-    return () => document.removeEventListener("keydown", handleEscClose);
-  }, [activeModal]);
-
-  useEffect(() => {
     function handleOutsideModalClick(evt) {
       if (evt.target.classList.contains("modal")) {
         handleCloseModal();
       }
     }
-
+    document.addEventListener("keydown", handleEscClose);
     document.addEventListener("click", handleOutsideModalClick);
-    return () => document.removeEventListener("click", handleOutsideModalClick);
-  }, []);
+
+    return () => {
+      document.removeEventListener("keydown", handleEscClose);
+      document.removeEventListener("click", handleOutsideModalClick);
+    };
+  }, [activeModal]);
 
   return (
     <div>
@@ -114,31 +110,40 @@ function App() {
           <p className="modal__label_header">Select the weather type:</p>
           <div>
             <div className="modal__label_container">
-              <input
-                className="modal__input_radio"
-                type="radio"
-                id="hot"
-                value="hot"
-              />
-              <label className="modal__label_radio">Hot</label>
+              <label className="modal__label_radio">
+                <input
+                  className="modal__input_radio"
+                  type="radio"
+                  id="hot"
+                  value="hot"
+                  name="option"
+                />
+                Hot
+              </label>
             </div>
             <div className="modal__label_container">
-              <input
-                className="modal__input_radio"
-                type="radio"
-                id="warm"
-                value="warm"
-              />
-              <label className="modal__label_radio">Warm</label>
+              <label className="modal__label_radio">
+                <input
+                  className="modal__input_radio"
+                  type="radio"
+                  id="warm"
+                  value="warm"
+                  name="option"
+                />
+                Warm
+              </label>
             </div>
             <div className="modal__label_container">
-              <input
-                className="modal__input_radio"
-                type="radio"
-                id="cold"
-                value="cold"
-              />
-              <label className="modal__label_radio">Cold</label>
+              <label className="modal__label_radio">
+                <input
+                  className="modal__input_radio"
+                  type="radio"
+                  id="cold"
+                  value="cold"
+                  name="option"
+                />
+                Cold
+              </label>
             </div>
           </div>
         </ModalWithForm>
