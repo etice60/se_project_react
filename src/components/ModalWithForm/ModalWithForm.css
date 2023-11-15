@@ -89,6 +89,6 @@
   margin: 4px;
 }
 
-.modal__input_radio:checked + .modal__label_radio {
+.modal__input_radio:checked + span {
   color: black;
 }

@@ -33,7 +33,11 @@ function Main({ weatherTemp, onSelectedCard, weatherUnit }) {
         Today is {`${weatherTemp}° ${weatherUnit}`} / You may want to wear:
         <div className="card_items">
           {filteredCards.map((item) => (
-            <ItemCard item={item} onSelectedCard={onSelectedCard} />
+            <ItemCard
+              item={item}
+              onSelectedCard={onSelectedCard}
+              key={item.console_id}
+            />
           ))}
         </div>
       </section>

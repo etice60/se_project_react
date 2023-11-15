@@ -118,7 +118,7 @@ function App() {
                   value="hot"
                   name="option"
                 />
-                Hot
+                <span>Hot</span>
               </label>
             </div>
             <div className="modal__label_container">
@@ -130,7 +130,7 @@ function App() {
                   value="warm"
                   name="option"
                 />
-                Warm
+                <span>Warm</span>
               </label>
             </div>
             <div className="modal__label_container">
@@ -142,7 +142,7 @@ function App() {
                   value="cold"
                   name="option"
                 />
-                Cold
+                <span>Cold</span>
               </label>
             </div>
           </div>
