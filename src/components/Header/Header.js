@@ -32,7 +32,7 @@ const Header = ({ weatherCity, onCreateModal }) => {
         </div>
         <div className="header__username">{username}</div>
         <div>
-          <img src={avatar} alt="logo" />
+          <img src={avatar} alt={`avatar of ${username}`} />
         </div>
       </div>
     </header>
