@@ -36,7 +36,7 @@ function Main({ weatherTemp, onSelectedCard, weatherUnit }) {
             <ItemCard
               item={item}
               onSelectedCard={onSelectedCard}
-              key={item.console_id}
+              key={item._id}
             />
           ))}
         </div>
