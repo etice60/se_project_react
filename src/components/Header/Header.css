@@ -3,7 +3,6 @@
   justify-content: space-between;
   align-items: center;
   min-height: 40px;
-  margin-bottom: 28px;
   margin-top: 32px;
   font-family: "CabinetGrotesk-Bold", Arial, sans-serif;
   font-size: 20px;
@@ -15,14 +14,21 @@
 
 .header__logo {
   display: flex;
-  gap: 20px;
+  gap: 24px;
   align-items: center;
+}
+
+.header__username {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-right: 12px;
 }
 
 .header__avatar-logo {
   display: flex;
   align-items: center;
-  gap: 20px;
 }
 
 .header__button {
@@ -35,6 +41,8 @@
   color: black;
   margin-right: 0;
   padding: 0;
+  cursor: pointer;
+  margin-left: 20px;
 }
 
 .header__button:hover {

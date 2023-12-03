@@ -2,35 +2,33 @@ import { defaultClothingItems } from "../../utils/contants";
 import WeatherCard from "../WeatherCard/WeatherCard";
 import ItemCard from "../ItemCard/ItemCard";
 import "./Main.css";
+import { useContext } from "react";
+import { CurrentTemperatureUnitContext } from "../contexts/CurrentTemperatureUnitContext";
+import { weatherType } from "../../utils/weatherApi";
 
-function Main({ weatherTemp, onSelectedCard, weatherUnit }) {
-  const weatherType = () => {
-    console.log(weatherTemp);
-    if (weatherTemp >= 86) {
-      return "hot";
-    } else if (weatherTemp >= 66 && weatherTemp <= 85) {
-      return "warm";
-    } else if (weatherTemp <= 65) {
-      return "cold";
-    }
-  };
+function Main({ weatherTemp, onSelectedCard, clothingItems }) {
+  const { currentTemperatureUnit } = useContext(CurrentTemperatureUnitContext);
+  const temp = weatherTemp?.temperature?.[currentTemperatureUnit] || 999;
 
-  const filteredCards = defaultClothingItems.filter((item) => {
-    console.log(item);
-    return item.weather.toLowerCase() === weatherType();
+  // console.log("defaultClothingItems", defaultClothingItems);
+
+  const currentWeatherType = weatherType(temp, currentTemperatureUnit);
+  // console.log("currentWeatherType", currentWeatherType);
+
+  const filteredCards = clothingItems.filter((clothingItem) => {
+    return clothingItem.weather.toLowerCase() === currentWeatherType;
   });
-
-  const temperatureString = weatherType();
+  // console.log("filteredCards", filteredCards);
 
   return (
     <main className="main">
       <WeatherCard
         day={false}
         type="clearnight"
-        temperatureString={`${weatherTemp}° ${weatherUnit}`}
+        temperatureString={`${temp}°`}
       />
       <section className="card_section" id="card-section">
-        Today is {`${weatherTemp}° ${weatherUnit}`} / You may want to wear:
+        Today is {`${temp}° ${currentTemperatureUnit}`} / You may want to wear:
         <div className="card_items">
           {filteredCards.map((item) => (
             <ItemCard

@@ -14,8 +14,7 @@
 
 .modal__image {
   border-radius: 10px 10px 0px 0px;
-  height: 498px;
-  max-height: 498px;
+  height: 610px;
 }
 
 .modal__content-card {
@@ -31,7 +30,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0;
+  /* padding: 0; */
 }
 
 .modal__info {
@@ -41,12 +40,15 @@
   font-weight: 700;
   color: black;
   margin-left: 32px;
+  width: 100%;
   margin-bottom: 32px;
 }
 
 .modal__card-name {
   margin-top: 20px;
   margin-bottom: 0px;
+  width: 65%;
+  display: inline-block;
 }
 
 .modal__card-weather {

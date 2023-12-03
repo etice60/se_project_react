@@ -92,3 +92,70 @@
 .modal__input_radio:checked + span {
   color: black;
 }
+
+input[type="radio"] {
+  cursor: pointer;
+}
+
+/* .modal__button-wrap {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 118px;
+} */
+
+.modal__confirm-content {
+  position: relative;
+  background-color: white;
+  max-width: 670px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 59px 28px;
+  text-align: center;
+  font-family: "CabinetGrotesk-Medium", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  color: black;
+}
+
+.modal__cancel-button {
+  margin-top: 24px;
+  border: none;
+  background-color: transparent;
+  font-family: "CabinetGrotesk-M", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+
+.modal__confirm-button {
+  margin-top: 40px;
+  border: none;
+  background-color: transparent;
+  font-family: "CabinetGrotesk-M", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  color: rgba(255, 77, 0, 1);
+  cursor: pointer;
+}
+
+.modal__confirm-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__delete-button {
+  margin-right: 32px;
+  border: none;
+  background-color: transparent;
+  font-family: "CabinetGrotesk-M", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: rgba(255, 77, 0, 1);
+  cursor: pointer;
+}

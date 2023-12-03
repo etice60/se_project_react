@@ -1,6 +1,7 @@
 .weather {
   position: relative;
   margin-bottom: 40px;
+  margin-top: 28px;
 }
 
 .weather__info {
