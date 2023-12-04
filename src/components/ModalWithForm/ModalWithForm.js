@@ -3,7 +3,6 @@ import "./ModalWithForm.css";
 
 const ModalWithForm = ({
   children,
-  buttonText = "Add garment",
   title,
   onClose,
   name,
@@ -12,19 +11,13 @@ const ModalWithForm = ({
 }) => {
   const ref = useRef();
 
-  const handleOutsideClick = (e) => {
-    if (ref.current && !ref.current.contains(e.target)) {
-      onClose();
-    }
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     onSubmit();
   };
 
   return (
-    <div className={`modal modal_type_${name}`} onClick={handleOutsideClick}>
+    <div className={`modal modal_type_${name}`}>
       <div className="modal__content">
         <button
           className="modal__close-button"
@@ -35,7 +28,7 @@ const ModalWithForm = ({
         <form onSubmit={handleSubmit}>
           {children}
           <button className="modal__add-button" type="submit">
-            {buttonText}
+            Add garment
           </button>
         </form>
       </div>

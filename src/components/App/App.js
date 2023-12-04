@@ -83,20 +83,14 @@ function App() {
       });
   };
 
-  // const onAddItem = (values) => {
-  //   console.log(values);
-  // };
-
   const handleToggleSwitchChange = () => {
-    if (currentTemperatureUnit === "C") setCurrentTemperatureUnit("F");
-    if (currentTemperatureUnit === "F") setCurrentTemperatureUnit("C");
+    setCurrentTemperatureUnit(currentTemperatureUnit === "F" ? "C" : "F");
   };
 
   useEffect(() => {
     getForestWeather()
       .then((data) => {
         const temperature = parseWeatherData(data);
-        // console.log(temperature);
         setTemp(temperature);
         setCity(parseCityData(data));
       })
@@ -132,8 +126,6 @@ function App() {
     };
   }, [activeModal]);
 
-  console.log(currentTemperatureUnit);
-  console.log("temp", temp);
   return (
     <div>
       <CurrentTemperatureUnitContext.Provider

@@ -8,17 +8,12 @@ const DeleteConfirmationModal = ({
 }) => {
   const ref = useRef();
 
-  const handleOutsideClick = (e) => {
-    if (ref.current && !ref.current.contains(e.target)) {
-      handleCloseConfirmModal();
-    }
-  };
   const handleCancel = () => {
     handleCloseConfirmModal();
   };
 
   return (
-    <div className="modal" onClick={handleOutsideClick}>
+    <div className="modal">
       <div className="modal__confirm-content" ref={ref}>
         <div>Are you sure you want to delete this item?</div>
         <div>This action is irreversible.</div>

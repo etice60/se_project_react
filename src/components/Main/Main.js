@@ -10,15 +10,11 @@ function Main({ weatherTemp, onSelectedCard, clothingItems }) {
   const { currentTemperatureUnit } = useContext(CurrentTemperatureUnitContext);
   const temp = weatherTemp?.temperature?.[currentTemperatureUnit] || 999;
 
-  // console.log("defaultClothingItems", defaultClothingItems);
-
   const currentWeatherType = weatherType(temp, currentTemperatureUnit);
-  // console.log("currentWeatherType", currentWeatherType);
 
   const filteredCards = clothingItems.filter((clothingItem) => {
     return clothingItem.weather.toLowerCase() === currentWeatherType;
   });
-  // console.log("filteredCards", filteredCards);
 
   return (
     <main className="main">

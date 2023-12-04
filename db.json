@@ -91,12 +91,6 @@
       "imageUrl": "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/wtwr-project/Sunglasses.png?etag=a1bced9e331d36cb278c45df51150432"
     },
     {
-      "_id": 15,
-      "name": "Sweatshirt",
-      "weather": "warm",
-      "imageUrl": "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/wtwr-project/Sweatshirt.png?etag=008a9674757bea2e0bdb31242e364be0"
-    },
-    {
       "_id": 16,
       "name": "T-Shirt",
       "weather": "hot",
@@ -119,6 +113,12 @@
       "imageUrl": "https://plus.unsplash.com/premium_photo-1682470124225-ed9ed8b08dce?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGJhdGhpbmclMjBzdWl0c3xlbnwwfHwwfHx8MA%3D%3D",
       "weather": "hot",
       "_id": 33
+    },
+    {
+      "name": "winter scarf",
+      "imageUrl": "https://images.unsplash.com/photo-1690315854810-dfeb1c763c27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60",
+      "weather": "cold",
+      "_id": 34
     }
   ]
 }

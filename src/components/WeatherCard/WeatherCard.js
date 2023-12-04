@@ -5,12 +5,12 @@ import { useContext } from "react";
 
 const WeatherCard = ({ day, type, temperatureString }) => {
   const { currentTemperatureUnit } = useContext(CurrentTemperatureUnitContext);
-  const imageSrc = weatherOptions.filter((i) => {
-    return i.day === day && i.type === type;
+  const weatherOption = weatherOptions.find((item) => {
+    return item.day === day && item.type === type;
   });
   console.log(temperatureString, currentTemperatureUnit);
 
-  const imageSrcUrl = imageSrc[0].url || "";
+  const imageSrcUrl = weatherOption.url || "";
 
   return (
     <section className="weather" id="weather">

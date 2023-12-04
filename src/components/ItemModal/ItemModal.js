@@ -4,14 +4,8 @@ import React, { useRef } from "react";
 const ItemModal = ({ selectedCard, onClose, handleOpenConfirmationModal }) => {
   const ref = useRef();
 
-  const handleOutsideClick = (e) => {
-    if (ref.current && !ref.current.contains(e.target)) {
-      onClose();
-    }
-  };
-
   return (
-    <div className={`modal`} onClick={handleOutsideClick}>
+    <div className={`modal`}>
       <div className="modal__content-card">
         <button
           className="image__close-button"
