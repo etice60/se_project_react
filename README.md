@@ -26,4 +26,4 @@ Figma Design:
 [Figma Design](doc:https://www.figma.com/file/F03bTb81Pw8IDPj5Y9rc5i/Sprint-10-%7C-WTWR)
 
 Links:
-https://etice60.github.io/se_project_react/
+https://github.com/etice60/se_project_express.git
