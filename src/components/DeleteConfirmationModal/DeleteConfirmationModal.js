@@ -5,6 +5,7 @@ const DeleteConfirmationModal = ({
   handleCloseConfirmModal,
   handleDeleteItem,
   selectedCard,
+  isLoading,
 }) => {
   const ref = useRef();
 
@@ -29,7 +30,7 @@ const DeleteConfirmationModal = ({
             type="button"
             onClick={() => handleDeleteItem(selectedCard._id)}
           >
-            Yes, delete item
+            {isLoading ? "Deleting..." : "Yes, delete item"}
           </button>
           <button
             className="modal__cancel-button"

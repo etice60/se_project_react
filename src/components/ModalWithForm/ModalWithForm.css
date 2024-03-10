@@ -159,3 +159,37 @@ input[type="radio"] {
   color: rgba(255, 77, 0, 1);
   cursor: pointer;
 }
+
+.modal__button {
+  width: 124px;
+  height: 36px;
+  margin-top: 34px;
+  margin-bottom: 8px;
+  background-color: #000;
+  border-radius: 4px;
+  color: rgba(225, 225, 225, 1);
+  cursor: pointer;
+  text-align: center;
+  border: none;
+}
+
+.modal__button:disabled {
+  opacity: 0.3;
+}
+
+.modal__buttont:hover {
+  opacity: 0.5;
+}
+
+.modal__button-alt {
+  width: 124px;
+  height: 36px;
+  margin-top: 34px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-radius: 4px;
+  color: grey;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+}

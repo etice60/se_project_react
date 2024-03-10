@@ -1,14 +1,7 @@
 import { useEffect, useRef } from "react";
 import "./ModalWithForm.css";
 
-const ModalWithForm = ({
-  children,
-  title,
-  onClose,
-  name,
-  isOpen,
-  onSubmit,
-}) => {
+const ModalWithForm = ({ children, title, onClose, name, onSubmit }) => {
   const ref = useRef();
 
   const handleSubmit = (e) => {
@@ -27,9 +20,9 @@ const ModalWithForm = ({
         <h3 className="modal__title">{title}</h3>
         <form onSubmit={handleSubmit}>
           {children}
-          <button className="modal__add-button" type="submit">
+          {/* <button className="modal__add-button" type="submit">
             Add garment
-          </button>
+          </button> */}
         </form>
       </div>
     </div>

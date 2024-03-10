@@ -1,4 +1,4 @@
-.card_section {
+.card__section {
   margin-top: 40px;
   color: #000;
   font-family: "CabinetGrotesk-Medium", Arial, sans-serif;
@@ -16,9 +16,9 @@
   height: 328px;
 }
 
-.card_name {
+.card__name {
   position: relative;
-  top: 35px;
+  top: 40px;
   background-color: white;
   max-width: 200px;
   border-radius: 5px;
@@ -41,10 +41,31 @@
   cursor: pointer;
 }
 
-.card_items {
+.card__items {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
   margin-top: 34px;
+}
+
+.card__header {
+  position: relative;
+  display: flex;
+  /* top: 44px; */
+}
+
+.card__like {
+  border: none;
+  background-color: transparent;
+}
+
+.card__like:hover {
+  cursor: pointer;
+}
+
+.card__like-container {
+  position: relative;
+  top: 40px;
+  left: 4px;
 }
