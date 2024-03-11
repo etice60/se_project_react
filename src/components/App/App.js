@@ -32,7 +32,6 @@ import * as auth from "../../utils/auth";
 import * as api from "../../utils/api";
 import ProtectedRoute from "../ProtectedRoute/ProtectedRoute";
 import { CurrentUserContext } from "../../contexts/CurrentUserContext";
-import { set } from "mongoose";
 
 function App() {
   const weatherTemp = 65;

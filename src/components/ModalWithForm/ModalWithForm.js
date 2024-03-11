@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import "./ModalWithForm.css";
 
 const ModalWithForm = ({ children, title, onClose, name, onSubmit }) => {
