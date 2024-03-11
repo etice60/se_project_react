@@ -82,18 +82,18 @@ function App() {
   }
 
   const handleAddItemSubmit = ({ name, imageUrl, weather }) => {
-    addItems({ name, imageUrl, weather }).then(({ data }) => {
-      setClothingItems([data, ...clothingItems]);
-      handleCloseModal();
-    });
+    addItems({ name, imageUrl, weather })
+      .then(({ data }) => {
+        setClothingItems([data, ...clothingItems]);
+        handleCloseModal();
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   const handleOpenConfirmationModal = () => {
     setActiveModal("delete");
-  };
-
-  const handleCloseConfirmModal = () => {
-    setActiveModal("");
   };
 
   const handleDeleteItem = () => {
@@ -107,13 +107,13 @@ function App() {
 
         setClothingItems(filteredCards);
         handleCloseModal();
-        handleCloseConfirmModal();
       })
       .catch((error) => {
         console.log(error);
       })
       .finally(() => {
         setDeleteCard(false);
+        setIsLoading(false);
       });
   };
 
@@ -352,7 +352,7 @@ function App() {
           {activeModal === "delete" && (
             <DeleteConfirmationModal
               handleDeleteItem={handleDeleteItem}
-              handleCloseConfirmModal={handleCloseConfirmModal}
+              handleCloseModal={handleCloseModal}
               selectedCard={selectedCard}
             ></DeleteConfirmationModal>
           )}

@@ -4,14 +4,6 @@ import { useForm } from "../../hooks/useForm";
 
 const AddItemModal = ({ handleCloseModal, isOpen, onAddItem, isLoading }) => {
   const { values, handleChange, setValues } = useForm({});
-  const [name, setName] = useState("");
-  const handleNameChange = (e) => {
-    setName(e.target.value);
-  };
-  const [imageUrl, setUrl] = useState("");
-  const handleUrlChange = (e) => {
-    setUrl(e.target.value);
-  };
 
   const [weather, setWeatherType] = useState("");
 
