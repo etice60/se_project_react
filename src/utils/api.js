@@ -1,6 +1,11 @@
 import { processServerResponse } from "./utils";
 
-export const baseUrl = "http://localhost:3001";
+// export const baseUrl = "http://localhost:3001";
+
+export const baseUrl =
+  process.env.NODE_ENV === "production"
+    ? "https://api.etice60wtwr.crabdance.com"
+    : "http://localhost:3001";
 
 export const getItems = () => {
   return fetch(`${baseUrl}/items`, {
